@@ -2,6 +2,7 @@ import Navbar from "@/public/components/Navbar";
 import "./globals.css";
 import { Lato } from 'next/font/google'
 import Footer from "@/public/components/Footer";
+import Rights from "@/public/components/Rights";
 
 export const metadata = {
   title: "Arco Repairs",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <Rights />
       </body>
     </html>
   );
