@@ -6,6 +6,9 @@ const HeroForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
+    contact:'',
+    
   });
 
   const handleChange = (e) => {
@@ -43,8 +46,8 @@ const HeroForm = () => {
           </label>
           <input className='border border-black rounded-md py-2'
             type="text"
-            name="name"
-            value={formData.name}
+            name="phone"
+            value={formData.phone}
             onChange={handleChange}
           />
         
@@ -57,8 +60,8 @@ const HeroForm = () => {
           </label>
           <input className='border border-black rounded-md py-2'
             type="text"
-            name="name"
-            value={formData.name}
+            name="email"
+            value={formData.email}
             onChange={handleChange}
           />
         
@@ -69,8 +72,8 @@ const HeroForm = () => {
           </label>
           <select
   className="border border-black rounded-md max-w-[185px] py-2"
-  name="name"
-  value={formData.name}
+  name="problem"
+  value={formData.problem}
   onChange={handleChange}
 >
   <option value="" disabled>What do you need?</option>
